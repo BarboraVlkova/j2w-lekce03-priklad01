@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="cs">
+
+// BOD 8
+// vlozim knihovnu Thymeleaf
+<html lang="cs" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>Kartička zákazníka</title>
@@ -16,19 +20,19 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Jan_Palach_foto_z_pr%C5%AFkazu.JPG" class="photo" alt="profilové foto"/>
         <div class="row">
             <span class="label">Jméno</span>
-            <span class="value">Jan</span>
+            <span class="value" th:text="${person.}">Jan</span>
         </div>
         <div class="row">
             <span class="label">Příjmení</span>
-            <span class="value">Palach</span>
+            <span class="value" th:text="${person.}" >Palach</span>
         </div>
         <div class="row">
             <span class="label">Datum narození</span>
-            <span class="value">11. 8. 1948</span>
+            <span class="value" th:text="${person.}">11. 8. 1948</span>
         </div>
         <div class="row">
             <span class="label">Věk</span>
-            <span class="value">72</span>
+            <span class="value" th:text="${person.}">72</span>
         </div>
     </div>
     <div class="address">

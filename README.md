@@ -5,7 +5,7 @@ sestávajícího ze dvou entit – `Person` (pro osobní údaje) a `Address` (pr
 
 1. Udělej fork zdrojového repository do svého účtu na GitHubu.
 1. Naklonuj si repository **ze svého účtu** na GitHubu na lokální počítač.
-1. Vytvoř kontrolér – třídu `cz.czechitas.java2webapps.lekce3.controller.CardController`.
+1. Vytvoř kontrolér – třídu `cz.czechitas.java2webapps.lekce3.cz.czechitas.java2webapps.lekce3.controller.CardController`.
 1. V kontroléru bude jedna metoda, která bude vracet `ModelAndView`. Jako view bude použito `card`. Metoda bude navázána na cestu `/`.
 1. Vytvoř `view` jménem `card` – jako základ použij `index.html`z adresáře `static`.
 1. Vytvoř entitu `cz.czechitas.java2webapps.lekce3.entity.Person`, která bude obsahovat jméno, příjmení, datum narození a také věk vypočtený z data narození.    
