@@ -1,6 +1,7 @@
 package cz.czechitas.java2webapps.lekce3.entity;
 
 import java.time.LocalDate;
+import java.time.Period;
 
 // BOD 4
 public class Person {
@@ -9,18 +10,19 @@ public class Person {
     private String krestniJmeno;
     private String surname;
     private LocalDate birthDate;
-    private int age;
+
 
     // BOD 7
     // vytvorim si druhy konstruktor
 public Person(){
 
 }
-    public Person(String givenName, String surname, LocalDate birthDate, int age) {
+    public Person(String givenName, String surname, LocalDate birthDate) {
         this.krestniJmeno = givenName;
         this.surname = surname;
         this.birthDate = birthDate;
-        this.age = age;
+        // BOD 12
+        // vymazu vek, settery a nastavim metodu pro vypocet (bod 12)
     }
 
     // BOD 5
@@ -33,6 +35,7 @@ public Person(){
     public void setGivenName(String givenName) {
         this.krestniJmeno = givenName;
     }
+
 
     // GET a SET se nazyva PROPERTY
     public String getSurname() {
@@ -51,11 +54,12 @@ public Person(){
         this.birthDate = birthDate;
     }
 
+    // BOD 12
     public int getAge() {
-        return age;
+        Period period = birthDate.until(LocalDate.now());
+        return period.getYears();
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+
+
 }

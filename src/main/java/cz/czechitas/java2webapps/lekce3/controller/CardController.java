@@ -22,11 +22,10 @@ public class CardController {
 
         // BOD 7
         // nastaveni pres konstruktor, tzn. vse na jednom radku
-        Person person = new Person("Jan","Palach", LocalDate.of(1948,8,11),72 );
+        Person person = new Person("Honza","Palach", LocalDate.of(1958,8,11) );
 
         ModelAndView card = new ModelAndView("card");
-        card.addObject("person", "person");
-        card.addObject("person","person");
+        card.addObject("person", person);
         return card;
     }
 }
