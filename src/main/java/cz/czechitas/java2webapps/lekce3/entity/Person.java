@@ -21,6 +21,7 @@ public Person(){
         this.krestniJmeno = givenName;
         this.surname = surname;
         this.birthDate = birthDate;
+
         // BOD 12
         // vymazu vek, settery a nastavim metodu pro vypocet (bod 12)
     }

@@ -44,8 +44,13 @@
         </div>
     </div>
     <div class="address">
-        <div class="address-line">Smetanova 337</div>
-        <div class="address-line"><span>27716</span> <span>Všetaty</span></div>
+        <div class="address-line" th:text="${addresse.street} ">Smetanova 337</div>
+
+<!--        tohle se vypise na jeden radek -->
+<!--        <div class="address-line"><span th:text="${addresse.zipCode} ">27716</span><span th:text="${addresse.city} ">Všetaty</span></div> -->
+
+        <div class="address-line" th:text="${addresse.city} ">Všetaty</div>
+        <div class="address-line" th:text="${addresse.zipCode} ">27716</div>
     </div>
 </div>
 </body>
